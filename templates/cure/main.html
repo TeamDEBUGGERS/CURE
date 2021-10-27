@@ -1,0 +1,22 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}?after">
+<html>
+<div style="width:1366px; height:768px;" class="main">
+<head>
+<meta charset="UTF-8">
+<title>CUREware</title>
+</head>
+	<body>
+	<div style="float: left;" class="container" id="left">
+    	<h1 id="clock">clock</h1>
+		<h1 id="date">date</h1>
+        <script src="{% static 'datetime.js' %}"></script>
+	</div>
+</body>
+<div style="float: right;" class="container" id="right">
+<button style="font-size: 8rem;" class="button" type="button" id="register" onclick="register_click();">회원가입</button>
+<text style="font-size: 2rem;">&nbsp;</text>
+<button style="font-size: 7rem;" class="button" type="button" id="checkin" onclick="checkin_click();">비회원 체크인</button>
+</div>
+</div>
+</html>

@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}?after">
+<html>
+<div style="width:1366px; height:768px;" class="main">
+<head>
+<meta charset="UTF-8">
+<title>CUREware</title>
+<text style="font-size: 17rem;">&nbsp;</text>
+<h1 id="centertext" style="font-size: 2rem; font-weight: 500;">체크인을 완료하였습니다</h1>
+<text style="font-size: 4rem;">&nbsp;</text>
+<h1 id="centertext" style="font-size: 5rem; font-weight: 700;">{{ temp }}</h1>
+<script>
+setTimeout(function(){location.href="index";}, 2000);
+</script>
+</div>
+</html>

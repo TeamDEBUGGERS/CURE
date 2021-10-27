@@ -1,0 +1,50 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}?after">
+<html>
+<div style="width:1366px; height:768px;" class="main">
+<head>
+<meta charset="UTF-8">
+<title>CUREware</title>
+</head>
+	<body>
+	<div style="float: left;" class="container" id="numleft">
+		<text style="font-size: 16rem;">&nbsp;</text>
+    	<h1 id="date">전화번호 맨 뒤 네 자리를 입력하세요</h1>
+		<text style="font-size: 3rem;">&nbsp;</text>
+		<div id="text"> </div>
+	</div>
+</body>
+<div style="float: right;" class="container" id="right">
+	<div style="float: right;" class="container" id="numrow">
+		<button class="button" type="button" id="confirm" onclick="bs_click();">Backspace</button>
+		<text style="font-size: 4rem;">&nbsp;</text>
+		<button class="button" type="button" id="confirm" onclick="conf_click();">Confirm</button>
+	</div>
+	<text style="font-size: 1rem;">&nbsp;</text>
+	<div style="float: right;" class="container" id="numrow">
+		<button class="button" type="button" id="number1" onclick="number_click('1');">1</button>
+		<text style="font-size: 4rem;">&nbsp;</text>
+		<button class="button" type="button" id="number1" onclick="number_click('2');">2</button>
+		<text style="font-size: 4rem;">&nbsp;</text>
+		<button class="button" type="button" id="number1" onclick="number_click('3');">3</button>
+	</div>
+	<text style="font-size: 1rem;">&nbsp;</text>
+	<div style="float: right;" class="container" id="numrow">
+		<button class="button" type="button" id="number1" onclick="number_click('4');">4</button>
+		<text style="font-size: 4rem;">&nbsp;</text>
+		<button class="button" type="button" id="number1" onclick="number_click('5');">5</button>
+		<text style="font-size: 4rem;">&nbsp;</text>
+		<button class="button" type="button" id="number1" onclick="number_click('6');">6</button>
+	</div>
+	<text style="font-size: 1rem;">&nbsp;</text>
+	<div style="float: right;" class="container" id="numrow">
+		<button class="button" type="button" id="number1" onclick="number_click('7');">7</button>
+		<text style="font-size: 4rem;">&nbsp;</text>
+		<button class="button" type="button" id="number1" onclick="number_click('8');">8</button>
+		<text style="font-size: 4rem;">&nbsp;</text>
+		<button class="button" type="button" id="number1" onclick="number_click('9');">9</button>
+	</div>
+	<text style="font-size: 1rem;">&nbsp;</text>
+	<button class="button" type="button" id="number0" onclick="number_click('0');">0</button>
+	<script src="{% static 'number2.js' %}"></script>
+</div>
